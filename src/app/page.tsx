@@ -10,7 +10,7 @@ export default function Home() {
         </h1>
         <p className="text-lg sm:text-xl text-gray-600">
           Your new workout logging &amp; stats app for iOS. Track your progress,
-          optimize your routine, and achieve your fitness goals.
+          optimize your routine, and achieve your fitness goals!
         </p>
       </header>
 
