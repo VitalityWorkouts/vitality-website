@@ -18,7 +18,7 @@ export default function Home() {
       {/* Replace "/placeholder.png" with your actual image in public/ folder */}
       <div className="flex items-center justify-center mb-8">
         <Image
-          src="/image.png"
+          src="/logo.png"
           alt="Vitality App Preview"
           width={150}
           height={150}
