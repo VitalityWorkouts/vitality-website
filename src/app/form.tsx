@@ -46,7 +46,7 @@ const Form: React.FC = () => {
       <div className="formTitle">Sign Up for Updates</div>
       <div className="formcontact">
         {submit ? (
-          <div className="afterForm">Thanks, will get back to you soon</div>
+          <div className="afterForm">Thanks, we will keep you updated!</div>
         ) : (
           <form onSubmit={handleSubmit} target="_self">
             <fieldset>
