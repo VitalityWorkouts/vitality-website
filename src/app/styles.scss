@@ -1,0 +1,109 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  /* Adjust these to match your existing website colors */
+  $primary-color: #6366f1;     /* Indigo (example) */
+  $secondary-color: #374151;   /* Gray 700 (example) */
+  $background-color: #f9fafb;  /* Gray 50 (example) */
+  
+  .formWrapper {
+    /* No more fixed or full-screen overlay */
+    position: static;
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto; /* centers on the page */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .contactForm {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      .contactFormWrapper {
+        /* Container background & styling */
+        border-radius: 12px;
+        margin: auto;
+        background-color: #fff; /* white background */
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
+        width: 100%;
+        padding: 2rem;
+  
+        /* A simple title above the form */
+        .formTitle {
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: $secondary-color;
+          margin-bottom: 1.5rem;
+        }
+  
+        .formcontact {
+          /* Success message */
+          .afterForm {
+            font-size: 1rem;
+            font-weight: 600;
+            color: $secondary-color;
+            margin-top: 1rem;
+          }
+  
+          form {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch; /* let the input & button fill the container width */
+  
+            fieldset {
+              border: none;
+              margin-bottom: 1.5rem;
+  
+              label {
+                display: block;
+                text-align: left;
+                color: $secondary-color;
+                font-weight: 500;
+                font-family: "Montserrat", sans-serif;
+                font-size: 1rem;
+                margin-bottom: 0.5rem;
+                text-transform: uppercase;
+                letter-spacing: 0.05rem;
+              }
+  
+              input {
+                width: 100%;
+                border: 1px solid $secondary-color;
+                border-radius: 6px;
+                padding: 0.75rem;
+                outline: none;
+                font-size: 1rem;
+                color: $secondary-color;
+  
+                &:focus {
+                  border-color: $primary-color;
+                }
+              }
+            }
+  
+            button {
+              background-color: $primary-color;
+              color: #fff;
+              border: none;
+              border-radius: 6px;
+              padding: 0.75rem;
+              font-size: 1rem;
+              font-weight: 600;
+              cursor: pointer;
+              text-transform: uppercase;
+              letter-spacing: 0.05rem;
+  
+              &:hover {
+                background-color: darken($primary-color, 10%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }

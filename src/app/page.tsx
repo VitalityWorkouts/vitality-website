@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Form from './form';
 
 export default function Home() {
   return (
@@ -34,6 +35,14 @@ export default function Home() {
           intuitive interface.
         </p>
       </main>
+
+      <div className="App">
+        <div className="formWrapper">
+          <div className="contactForm">
+            <Form />
+          </div>
+        </div>
+      </div>
 
       {/* Footer */}
       <footer className="mt-10 text-center text-sm text-gray-500">
